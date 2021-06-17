@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_margin="8dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="5dp"
+        android:foreground="@drawable/custom_ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_weapon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:contentDescription="imagem da habilidade"
+                app:layout_constraintBottom_toTopOf="@+id/guidelineCarCenter"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineCarEnd"
+                app:layout_constraintStart_toStartOf="@+id/guidelineCardStart"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="VectorDrawableCompat" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_weapon"
+                android:layout_width="0dp"
+                android:layout_height="13dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:maxLines="1"
+                android:text="VANDAL"
+                android:textAppearance="@style/TextAppearance.AppTheme.Body1"
+                android:textColor="@color/title_text_color"
+                app:fontFamily="@font/googlesans_bold"
+                app:layout_constraintStart_toStartOf="@+id/guidelineCardStart"
+                app:layout_constraintTop_toTopOf="@+id/category_weapon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/category_weapon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/googlesans_medium"
+                android:text="EEquippableCategory::Heavy"
+                android:textAppearance="@style/TextAppearance.AppTheme.Body2"
+                android:textColor="@color/description_text_color"
+                app:fontFamily="@font/googlesans_regular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineCarEnd"
+                app:layout_constraintTop_toTopOf="@+id/guidelineCarCenter" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCardStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCarEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCarCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="32dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

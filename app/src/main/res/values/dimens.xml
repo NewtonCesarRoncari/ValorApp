@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Main Activity-->
+    <dimen name="bottom_navigation_height">56dp</dimen>
+
+    <!--Login Activity-->
+    <dimen name="logo_size">96dp</dimen>
+
+    <!--Empresa Activity-->
+    <dimen name="register_anim_size">144dp</dimen>
+    <dimen name="empresa_righ_left_margins">16dp</dimen>
+
+    <!--Produto Activity-->
+    <dimen name="produto_thumb_height">67.5dp</dimen>
+    <dimen name="produto_thumb_width">54dp</dimen>
+    <dimen name="produto_image_height">160dp</dimen>
+
+    <!--Orcamento Activity-->
+    <dimen name="icon_label_size">22dp</dimen>
+    <dimen name="space_between_options">18dp</dimen>
+    <dimen name="img_cores_size">62dp</dimen>
+
+    <!-- Dashboard -->
+    <dimen name="chart_height">128dp</dimen>
+    <dimen name="card_height">190dp</dimen>
+    <dimen name="image_view_height">90dp</dimen>
+
+    <!-- Others -->
+    <dimen name="default_radius">12dp</dimen>
+    <dimen name="default_radius_input_grade">8dp</dimen>
+    <dimen name="default_card_radius">16dp</dimen>
+    <dimen name="empty_list_icon">72dp</dimen>
+    <dimen name="card_stroke_width">0.5dp</dimen>
+    <dimen name="text_stroke_width">0.7dp</dimen>
+    <dimen name="bottom_sheet_corner_radius">16dp</dimen>
+    <dimen name="bottom_sheet_top_padding">8dp</dimen>
+    <dimen name="card_abilities_height">120dp</dimen>
+
+
+    <!--Text Dimen-->
+    <dimen name="headline1">80sp</dimen>
+    <dimen name="headline2">52sp</dimen>
+    <dimen name="headline3">40sp</dimen>
+    <dimen name="headline4">24sp</dimen>
+    <dimen name="headline5">22sp</dimen>
+    <dimen name="headline6">18sp</dimen>
+    <dimen name="subtitle1">16sp</dimen>
+    <dimen name="subtitle2">14sp</dimen>
+    <dimen name="body1">12sp</dimen>
+    <dimen name="body2">10sp</dimen>
+    <dimen name="caption">8sp</dimen>
+    <dimen name="button">12sp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+</resources>

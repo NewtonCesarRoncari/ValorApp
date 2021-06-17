@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.nroncari.valorapp.presentation.ui.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_agentDetailFragment"
+            app:destination="@id/agentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agentDetailFragment"
+        android:name="com.nroncari.valorapp.presentation.ui.AgentDetailFragment"
+        android:label="AgentDetailFragment"
+        tools:layout="@layout/fragment_agent_detail">
+        <argument
+            android:name="uuid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponFragment"
+        android:name="com.nroncari.valorapp.presentation.ui.ListWeaponFragment"
+        android:label="WeaponFragment"
+        tools:layout="@layout/fragment_weapon_list"/>
+    <fragment
+        android:id="@+id/listAgentFragment"
+        android:name="com.nroncari.valorapp.presentation.ui.ListAgentFragment"
+        android:label="ListAgentFragment"
+        tools:layout="@layout/fragment_agent_list"/>
+</navigation>
